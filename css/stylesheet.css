@@ -183,7 +183,7 @@ ul#social-nav li:hover {
 	color: white;
 }
 
-.text-blue {
+.text-red {
 	color: #CC0000;
 }
 
@@ -222,7 +222,7 @@ h2 {
 	font-weight: 600;
 	letter-spacing: 0.035em;
 	margin-top: 3%;
-	
+
 }
 
 p strong {
