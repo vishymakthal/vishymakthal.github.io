@@ -70,10 +70,10 @@
 	</div>
 </div>
 
-<!--ABOUT SECTION-->
+<!--DIRECTIONS-->
 <div class="container-fluid page">
 	<div class="header-class" id="map">
-		<h2 class="text-black text-center text-uppercase">Directions</h2>
+		<h2 class="text-black text-center text-uppercase">How to get there</h2>
 	</div>
 	<!-- Row 1 Begins -->
 	<!--Row 2 Begins-->
@@ -85,8 +85,13 @@
         var xmlHttp = new XMLHttpRequest();
         xmlHttp.onreadystatechange = function() {
           if (xmlHttp.readyState == 4 && xmlHttp.status == 200){
-          var location = JSON.parse(xmlHttp.responseText);
-          document.getElementById("directions").innerHTML = " <iframe width=\"600\" height=\"450\" frameborder=\"0\" style=\"border:0\" src=\"https://www.google.com/maps/embed/v1/directions?key=AIzaSyDvsONygj5EuKTvRMA_NvPDBTH2K4LGNu4&destination=Vi%C5%9Fnezade%20Mahallesi%2C%20BJK%20Vodafone%20Park%2C%20Be%C5%9Fikta%C5%9F%2FIstanbul%2C%20Turkey&origin=" + location.city + "+" + location.region + "&mode=flying\"allowfullscreen></iframe>";
+            var location = JSON.parse(xmlHttp.responseText);
+            if(location.longitude > -10 && location.longitude < 45 && location.latitude > 35) { // true if in Europe
+              document.getElementById("directions").innerHTML = " <iframe width=\"600\" height=\"450\" frameborder=\"0\" style=\"border:0\" src=\"https://www.google.com/maps/embed/v1/directions?key=AIzaSyDvsONygj5EuKTvRMA_NvPDBTH2K4LGNu4&destination=Vi%C5%9Fnezade%20Mahallesi%2C%20BJK%20Vodafone%20Park%2C%20Be%C5%9Fikta%C5%9F%2FIstanbul%2C%20Turkey&origin=" + location.city + "+" + location.region + "\"allowfullscreen></iframe>";
+            }
+            else{ // not in europe
+              document.getElementById("directions").innerHTML = " <iframe width=\"600\" height=\"450\" frameborder=\"0\" style=\"border:0\" src=\"https://www.google.com/maps/embed/v1/directions?key=AIzaSyDvsONygj5EuKTvRMA_NvPDBTH2K4LGNu4&destination=Vi%C5%9Fnezade%20Mahallesi%2C%20BJK%20Vodafone%20Park%2C%20Be%C5%9Fikta%C5%9F%2FIstanbul%2C%20Turkey&origin=" + location.city + "+" + location.region + "&mode=flying\"allowfullscreen></iframe>";
+            }
           }
         }
         xmlHttp.open("GET", "https://ipapi.co/json/", true); // true for asynchronous
@@ -96,26 +101,26 @@
                        	<p id="directions">
 												</p>
 
-
-
 		<div class="col-sm-1"></div>
 	</div>
 	<br><br><br>
 </div>
 
-<!-- CONTACT -->
+<!-- ABOUT-->
 <div class="container-fluid super-dark">
-	<div class="header-class" id="contact">
-		<h2 class="text-center text-uppercase text-white">Contact</h2>
+	<div class="header-class" id="about">
+		<h2 class="text-center text-uppercase text-white">About</h2>
 	</div>
 	<div class="row text-center">
-		<p class="text-white" id="contact-description">
-			Contact me at: <a href="mailto:vmaktha@ncsu.edu" class="text-red">vmaktha@ncsu.edu</a>.
-		</p>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/DsymEF8UIc8?rel=0" frameborder="0" allowfullscreen></iframe>
+    <p class="text-white" id="contact-description">
+      <br>Made by Vishy Makthal
+    </p>
 		<ul class="list-inline" id="social-nav">
-			<li><a href="https://www.linkedin.com/in/vedashrey-makthal-0b3107110/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
 			<li><a href="https://www.github.com/vishymakthal" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
 		</ul>
+
 	</div>
 	<br><br><br>
 </div>
