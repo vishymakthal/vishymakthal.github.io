@@ -42,6 +42,12 @@ h1#name {
 	letter-spacing: 0.05em;
 }
 
+h4#name {
+	font-size: 12em;
+	font-weight: 600;
+	letter-spacing: 0.05em;
+}
+
 
 div#descriptors {
 	color: white;
@@ -212,7 +218,7 @@ ul#social-nav li:hover {
 /*** === PARALLAX === ***/
 
 .parallax {
-    background-image: url("../images/beach.jpg");
+    background-image: url("../images/quaresma.jpg");
 
     background-attachment: fixed;
     background-position: center;

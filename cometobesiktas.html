@@ -60,50 +60,51 @@
 	</div>
 </nav>
 
-<!--LANDING SECTION-->
-<div id="top">
-	<div id="top-container">
-		<img src="images/quaresma.jpg" width="100%" height="100%" alt="background image" class="img-responsive"/>
-		<div id="heading-holder" class="">
-			<h1 class="text-uppercase text-center text-white" id="name"><br><br>COME TO BESIKTAS</h1>
-		</div>
-	</div>
-</div>
 
 <!--DIRECTIONS-->
 <div class="container-fluid page">
-	<div class="header-class" id="map">
-		<h2 class="text-black text-center text-uppercase">How to get there</h2>
-	</div>
-	<!-- Row 1 Begins -->
-	<!--Row 2 Begins-->
-	<div class="row">
-		<div class="col-sm-1"></div>
-		<div class="col-sm-10 text-center">
+  <!-- Row 1 Begins -->
+  <div class="row">
+  	<div class="header-class" id="map">
+  		<h1 class="text-center text-uppercase">Come To Besiktas</h1>
+      <a href="www.wikipedia.org/wiki/Besiktas_J.K."><img src="./images/besiktaslogo.png" alt="Besiktas logo"></a>
 
-      <script>
-        var xmlHttp = new XMLHttpRequest();
-        xmlHttp.onreadystatechange = function() {
-          if (xmlHttp.readyState == 4 && xmlHttp.status == 200){
-            var location = JSON.parse(xmlHttp.responseText);
-            if(location.longitude > -10 && location.longitude < 45 && location.latitude > 35) { // true if in Europe
-              document.getElementById("directions").innerHTML = " <iframe width=\"600\" height=\"450\" frameborder=\"0\" style=\"border:0\" src=\"https://www.google.com/maps/embed/v1/directions?key=AIzaSyDvsONygj5EuKTvRMA_NvPDBTH2K4LGNu4&destination=Vi%C5%9Fnezade%20Mahallesi%2C%20BJK%20Vodafone%20Park%2C%20Be%C5%9Fikta%C5%9F%2FIstanbul%2C%20Turkey&origin=" + location.city + "+" + location.region + "\"allowfullscreen></iframe>";
+      <!--Row 1 Begins-->
+      <div class="row">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-10 text-center">
+          <script>
+            var xmlHttp = new XMLHttpRequest();
+            xmlHttp.onreadystatechange = function() {
+              if (xmlHttp.readyState == 4 && xmlHttp.status == 200){
+                var location = JSON.parse(xmlHttp.responseText);
+                if(location.longitude > -10 && location.longitude < 45 && location.latitude > 35) { // true if in Europe
+                  document.getElementById("directions").innerHTML = " <iframe width=\"600\" height=\"450\" frameborder=\"0\" style=\"border:0\" src=\"https://www.google.com/maps/embed/v1/directions?key=AIzaSyDvsONygj5EuKTvRMA_NvPDBTH2K4LGNu4&destination=Vi%C5%9Fnezade%20Mahallesi%2C%20BJK%20Vodafone%20Park%2C%20Be%C5%9Fikta%C5%9F%2FIstanbul%2C%20Turkey&origin=" + location.city + "+" + location.region + "\"allowfullscreen></iframe>";
+                }
+                else{ // not in europe
+                  document.getElementById("directions").innerHTML = " <iframe width=\"600\" height=\"450\" frameborder=\"0\" style=\"border:0\" src=\"https://www.google.com/maps/embed/v1/directions?key=AIzaSyDvsONygj5EuKTvRMA_NvPDBTH2K4LGNu4&destination=Vi%C5%9Fnezade%20Mahallesi%2C%20BJK%20Vodafone%20Park%2C%20Be%C5%9Fikta%C5%9F%2FIstanbul%2C%20Turkey&origin=" + location.city + "+" + location.region + "&mode=flying\"allowfullscreen></iframe>";
+                }
+              }
             }
-            else{ // not in europe
-              document.getElementById("directions").innerHTML = " <iframe width=\"600\" height=\"450\" frameborder=\"0\" style=\"border:0\" src=\"https://www.google.com/maps/embed/v1/directions?key=AIzaSyDvsONygj5EuKTvRMA_NvPDBTH2K4LGNu4&destination=Vi%C5%9Fnezade%20Mahallesi%2C%20BJK%20Vodafone%20Park%2C%20Be%C5%9Fikta%C5%9F%2FIstanbul%2C%20Turkey&origin=" + location.city + "+" + location.region + "&mode=flying\"allowfullscreen></iframe>";
-            }
-          }
-        }
-        xmlHttp.open("GET", "https://ipapi.co/json/", true); // true for asynchronous
-        xmlHttp.send(null);
+            xmlHttp.open("GET", "https://ipapi.co/json/", true); // true for asynchronous
+            xmlHttp.send(null);
 
-      </script>
-                       	<p id="directions">
-												</p>
+          </script>
+                            <p id="directions">
+                            </p>
 
-		<div class="col-sm-1"></div>
-	</div>
-	<br><br><br>
+        <div class="col-sm-1"></div>
+      </div>
+      <br><br><br>
+      </div>
+
+  	</div>
+  </div>
+
+
+
+<div class="container fluid parallax page">
+
 </div>
 
 <!-- ABOUT-->
