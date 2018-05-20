@@ -19,7 +19,7 @@
 		<link rel="stylesheet" href="assets/css/parallax.css">
 
 	</head>
-	<body class="landing">
+	<body class="landing" data-spy="scroll" data-target=".navbar" data-offset="50">
 
 		<!-- Page Wrapper -->
 			<div id="page-wrapper">
@@ -33,7 +33,7 @@
 									<a href="#menu" class="menuToggle"><span>Menu</span></a>
 									<div id="menu">
 										<ul>
-											<li><a href="#into">Introduction</a></li>
+											<li><a href="#intro">Introduction</a></li>
 											<li><a href="#projects">Projects</a></li>
 											<li><a href="#experience">Experience</a></li>
 											<li><a href="#about">Passions</a></li>
@@ -77,15 +77,17 @@
 					</section>
 
 
+				<div class="bg-image1">
+					<div class="caption">
+						<span class="border">Projects</span>
+					</div>
+				</div>
+
 				<!-- PROJECTS -->
 				<section id="projects" class="wrapper alt style2 special">
-					<header class="major">
-						<br/>
-						<h2>Projects</h2>
-					</header>
 					<section class="spotlight">
 						<div class="image"><img src="images/scoutToolPic.PNG" alt="" /></div><div class="content">
-							<h2><a href="http://soccer-scouting-app.herokuapp.com">Soccer Scouting Tool</a><br /></h2>
+							<h2>Soccer Scouting Tool<br /></h2>
 							<p>A web application that uses FIFA Player ratings and Reddit APIs to create an interactive soccer scouting tool.</p>
 							<a class="button special" href="http://soccer-scouting-app.herokuapp.com">Check it out here!</a>
 						</div>
@@ -105,29 +107,23 @@
 					</section>
 				</section -->
 
-			<section>
-				<div class="bg-image1">
+				<div class="bg-image2">
 					<div class="caption">
-						<span class="border">EXPERIENCE</span>
+						<span class="border">Experience</span>
 					</div>
 				</div>
-			</section>
 
 				<!-- EXPERIENCE	 -->
 						<section id="experience" class="wrapper style1 special">
-							<header class="major">
-							<h2>Experience<br /></h2>
-							</header>
 							<section class="spotlight">
 								<div class="image"><img src="images/garmin.png" alt="" /></div><div class="content">
 									<h2>Software Engineering Intern</h2>
 									<p>May 2018 - <i>Present</i><br /></p>
-									<p>I will be in the Aviation division at Garmin's Kansas City HQ this summer, working on the <a href="https://buy.garmin.com/en-US/US/p/90821"> G5000 line of navigation systems </a>.</p>
+									<p>Working in the Aviation division at Garmin's Kansas City HQ this summer, focusing on the development and verification of aircraft navigation system UIs</a>.</p>
 									<b>Skills & Technologies:</b>
 									<ul>
-										<li>UI Framework Development</li>
-										<li>Embedded System Optimization</li>
-										<li>Verification automation</li>
+										<li>UI Development</li>
+										<li>Verification Framework Development</li>
 										<li>C</li>
 										<li>Python</li>
 									</ul>
@@ -149,21 +145,24 @@
 							</section>
 						</section>
 
+
+				<div class="bg-image3">
+					<div class="caption">
+						<span class="border">Passions and Interests</span>
+					</div>
+				</div>
+
 					<!-- PASSIONS -->
 						<section id="about" class="wrapper alt style2 special">
 							<div class="inner">
-								<header class="major">
-									<br/>
-									<h2>Passions & Interests</h2>
-								</header>
 								<ul class="features">
 									<li class="icon fa-code">
 										<h3>Development</h3>
 										<p>I always look to code up some fun projects. From embedded systems to web applications, I love the process of designing something from scratch and seeing the idea become reality, while learning new things along the way.</p>
 									</li>
-									<li class="icon fa-laptop">
-										<h3>Embedded Systems</h3>
-										<p>I find a great sense of reward in building things by hand. I like to prototype with the Raspberry Pi to create cheeky IoT gadgets.</p>
+									<li class="icon fa-font">
+										<h3>Writing</h3>
+										<p> Writing is a hobby I've picked up recently with the inception of my blog. I like writing about the things that interest me, and hopefully spreading knowledge as a side effect. You can follow my writing journey<a href="http://www.vishy.xyz/blog"!> here</a>!</p>
 									</li>
 									<li class="icon fa-futbol-o">
 										<h3>Sports</h3>
@@ -202,6 +201,7 @@
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 	</body>
 </html>
