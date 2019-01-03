@@ -13,7 +13,7 @@
 
 .bg-image1 {
   /* The image used */
-  background-image: url("../../images/projects-bg.jpg");
+  background-image: url("https://i.imgur.com/5r0vJlH.jpg");
 
   /* Set a specific height */
   height: 500px;
@@ -21,7 +21,7 @@
 
 .bg-image2 {
   /* The image used */
-  background-image: url("../../images/experience-bg.png");
+  background-image: url("https://i.imgur.com/dRKLRRE.jpg");
 
   /* Set a specific height */
   height: 500px;
@@ -29,7 +29,7 @@
 
 .bg-image3{
   /* The image used */
-  background-image: url("../../images/passion-bg.jpg");
+  background-image: url("https://i.imgur.com/EyfYRrF.jpg");
 
   /* Set a specific height */
   height: 500px;
