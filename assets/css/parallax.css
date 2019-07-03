@@ -13,44 +13,24 @@
 
 .bg-image1 {
   /* The image used */
-  background-image: url("https://i.imgur.com/5r0vJlH.jpg");
-
+/*  background-image: url("https://i.imgur.com/5r0vJlH.jpg"); */
+    background-image: url("../../images/projects-bg-test.jpg");
   /* Set a specific height */
   height: 500px;
 }
 
 .bg-image2 {
   /* The image used */
-  background-image: url("https://i.imgur.com/dRKLRRE.jpg");
-
+  /* background-image: url("https://i.imgur.com/dRKLRRE.jpg"); */
+  background-image: url("../../images/experience-bg-test.jpg");
   /* Set a specific height */
   height: 500px;
 }
 
 .bg-image3{
   /* The image used */
-  background-image: url("https://i.imgur.com/EyfYRrF.jpg");
-
+  /* background-image: url("https://i.imgur.com/EyfYRrF.jpg"); */
+   background-image: url("../../images/passions.png");
   /* Set a specific height */
   height: 500px;
-}
-
-
-.caption {
-  position: relative;
-  left: 0;
-  top: 50%;
-  width: 100%;
-  text-align: center;
-  color: #000;
-}
-
-.caption span.border {
-  background-color: #ed4933;
-  color: #fff;
-  padding: 18px;
-  font-family: "Open Sans", Helvetica, sans-serif;
-  font-size: 25px;
-  letter-spacing: 2px;
-
 }
