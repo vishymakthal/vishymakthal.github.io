@@ -23,6 +23,7 @@ body {
     scroll-behavior: smooth;
     background-color: #2a343d;
     color: white;
+    text-align: center;
 }
 
 .img-circle {
