@@ -3826,3 +3826,13 @@
 	body.is-mobile.landing #footer {
 		background-color: #1d242a;
 	}
+
+	.card-img-top {
+		width:100%;
+		padding:0 10px 0 10px;
+	}
+	@media (min-width: 480px) {
+		.card-img-top {
+		padding:0 30% 0 30%;
+	}
+	}

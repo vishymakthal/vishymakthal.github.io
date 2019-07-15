@@ -64,11 +64,11 @@
   font-weight: 800;
   font-size: 52px;
   letter-spacing: 2px;
-  text-shadow: -5px 1px 0px #000000;
+  text-shadow: -8px 1px 0px #000000;
 }
 @media
   (min-width: 480px) {
    .caption span.border {
-    font-size: 72px;
+    font-size: 80px;
   }
 }
