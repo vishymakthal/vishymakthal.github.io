@@ -1,4 +1,4 @@
-baseURL = 'http://vishymakthal.com'
+baseURL = 'https://vishymakthal.com'
 languageCode = 'en-us'
 title = 'Vishy Makthal'
 theme = "cactus"
