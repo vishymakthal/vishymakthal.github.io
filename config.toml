@@ -1,7 +1,7 @@
 baseURL = 'http://vishymakthal.com'
 languageCode = 'en-us'
 title = 'Vishy Makthal'
-theme = "Cactus"
+theme = "cactus"
 
 # Main menu which appears below site header.
 [[menu.main]]
