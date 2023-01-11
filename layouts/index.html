@@ -1,0 +1,34 @@
+{{ define "main" }}
+  <img src="images/seth.jpg"/ alt="Green room picture with Seth Meyers"></img>
+  <br/>
+  <br/>
+  <section id="about">
+  {{ if isset .Site.Params "description" }}
+    {{ .Site.Params.description | $.Page.RenderString }}
+  {{ end }} 
+  {{ partial "optional-about.html" . }}
+  </section>
+
+  {{ $showProjectsList := false }}
+  {{ if (isset .Site.Params "showprojectslist") }}
+    {{ $showProjectsList = .Site.Params.showProjectsList }}
+  {{ else if .Site.Data.projects }}
+    {{ $showProjectsList = true }}
+  {{ end }}
+  {{ if $showProjectsList }}
+    {{ $projectsUrl := "#" }}
+    {{ if isset .Site.Params "projectsurl" }}
+      {{ $projectsUrl = .Site.Params.projectsUrl }}
+    {{ end }}
+  <section id="projects">
+    <span class="h1"><a href="{{ $projectsUrl }}">Projects</a></span>
+    <ul class="project-list">
+        {{ range .Site.Data.projects.list }}
+        <li class="project-item">
+          <a href="{{ .url }}">{{ .name }}</a>: {{ .desc | markdownify }}
+        </li>
+        {{ end }}
+    </ul>
+  </section>
+  {{ end }}
+{{ end }}

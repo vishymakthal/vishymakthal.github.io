@@ -1,0 +1,9 @@
+[submodule "themes/salinger"]
+	path = themes/salinger
+	url = https://github.com/jacksalici/salinger-theme.git
+[submodule "themes/minima"]
+	path = themes/minima
+	url = https://github.com/mivinci/hugo-theme-minima.git
+[submodule "themes/cactus"]
+	path = themes/cactus
+	url = https://github.com/monkeyWzr/hugo-theme-cactus.git

@@ -1,0 +1,36 @@
+baseURL = 'http://vishymakthal.com'
+languageCode = 'en-us'
+title = 'Vishy Makthal'
+theme = "Cactus"
+
+# Main menu which appears below site header.
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[menu.main]]
+name = "Gallery"
+url = "/gallery"
+weight = 2
+
+[[menu.main]]
+name = "Stand Up"
+url = "/standup"
+weight = 4
+
+[params]
+
+    colortheme = "white"
+
+    description = "**Vishy Makthal** is a comedian and writer based in New York City. He was born in **Hyderabad, India** and was raised there, as well as in **North Carolina**. He's performed on shows across the country and abroad, having been featured in **India and Europe**. Vishy has shared the stage with many talented performers, including **Seth Meyers**. He's also **kind of tall.**"
+
+    [[params.social]]
+        name = "instagram"
+        link = "https://www.instagram.com/veeshm8"
+    [[params.social]]
+        name = "twitter"
+        link = "https://www.twitter.com/veeshm8"
+    [[params.social]]
+        name = "tiktok"
+        link = "https://www.tiktok.com/@fanofwholefoods"
