@@ -2,6 +2,7 @@ baseURL = 'https://vishymakthal.com'
 languageCode = 'en-us'
 title = 'Vishy Makthal'
 theme = "cactus"
+googleAnalytics = 'G-WDVD19M799'
 
 # Main menu which appears below site header.
 [[menu.main]]
@@ -18,8 +19,6 @@ weight = 2
 name = "Stand Up"
 url = "/standup"
 weight = 4
-
-googleAnalytics = 'G-WDVD19M799'
 
 [params]
 
