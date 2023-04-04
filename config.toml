@@ -19,11 +19,13 @@ name = "Stand Up"
 url = "/standup"
 weight = 4
 
+googleAnalytics = 'G-WDVD19M799'
+
 [params]
 
     colortheme = "white"
 
-    description = "**Vishy Makthal** is a comedian and writer based in New York City. He was born in **Hyderabad, India** and was raised there, as well as in **North Carolina**. He's performed on shows across the country and abroad, having been featured in **India and Europe**. Vishy has shared the stage with many talented performers, including **Seth Meyers**. He's also **kind of tall.**"
+    description = "**Vishy Makthal** is a comedian and writer from **Raleigh, NC**. Currently based in **New York City**, he was born in **Hyderabad, India** and was raised there and in the Triangle. As a South Indian from the South, Vishy's clashing identities have left him with a penchant for **sharp observational humor** and a liking for Bojangles with Dal Chawal. He's performed on shows across the country (**Goodnights Comedy Club**, **Broadway Comedy Club**) and abroad, having been featured in India and Europe. Vishy has shared the stage with many talented performers along the way, including **Seth Meyers** and **Ralph Barbosa**. He’s also kind of tall."
 
     [[params.social]]
         name = "instagram"
