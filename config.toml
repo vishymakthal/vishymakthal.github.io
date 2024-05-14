@@ -24,7 +24,7 @@ weight = 4
 
     colortheme = "white"
 
-    description = "**Vishy Makthal** is a comedian and writer from **Raleigh, NC**. Currently based in **New York City**, he was born in **Hyderabad, India** and was raised there and in the Triangle. As a South Indian from the South, Vishy's clashing identities have left him with a penchant for **sharp observational humor** and a liking for Bojangles with Dal Chawal. He's performed on shows across the country (**Goodnights Comedy Club**, **Broadway Comedy Club**) and abroad, having been featured in India and Europe. Vishy has shared the stage with many talented performers along the way, including **Seth Meyers** and **Ralph Barbosa**. He’s also kind of tall."
+    description = "**Vishy Makthal** is a comedian and writer based in  **New York City**.  He was raised in both **Hyderabad, India** and **Raleigh, NC**. As a South Indian from the South, Vishy's clashing identities have left him with a penchant for **sharp observational humor** and a liking for Bojangles with Dal Chawal. He's been featured on shows stateside (**Goodnights Comedy Club**, **Broadway Comedy Club**, **Greenwich Village Comedy Club**) and abroad, having performed in India and Europe. Vishy has shared the stage with many talented performers along the way, including **Seth Meyers** and **Ralph Barbosa**."
 
     [[params.social]]
         name = "instagram"
