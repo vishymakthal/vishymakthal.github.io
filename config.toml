@@ -26,6 +26,8 @@ weight = 4
 
     description = "**Vishy Makthal** is a comedian and writer from **Raleigh, NC**. Currently based in **New York City**, he was born in **Hyderabad, India** and was raised there and in the Triangle. As a South Indian from the South, Vishy's clashing identities have left him with a penchant for **sharp observational humor** and a liking for Bojangles with Dal Chawal. He's performed on shows across the country (**Goodnights Comedy Club**, **Broadway Comedy Club**) and abroad, having been featured in India and Europe. He’s also kind of tall."
 
+    googleAnalyticsAsync = false
+
     [[params.social]]
         name = "instagram"
         link = "https://www.instagram.com/veeshm8"
