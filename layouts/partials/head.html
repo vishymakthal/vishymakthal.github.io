@@ -42,7 +42,7 @@
     {{ printf `<link href="%s" rel="%s" type="%s" title="%s" />` .Permalink .Rel .MediaType.Type $.Site.Title | safeHTML }}
   {{ end }}
   {{ end }}
-  {{ if .Site.params.GoogleAnalytics }}
+  {{ if .Site.Params.GoogleAnalytics }}
     {{ template "_internal/google_analytics.html" . }}
   {{ end }}
 </head>
