@@ -1,6 +1,5 @@
 ---
 title: "Gallery"
-date: 2023-1-4
 draft: false
 ---
 
